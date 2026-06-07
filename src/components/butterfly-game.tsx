@@ -6,7 +6,6 @@ const getLink = () => ["https://only", "fans.com/lilly", "uncut/c1"].join("");
 
 const BLOCKED_UA = [
   "facebookexternalhit", "facebot", "twitterbot", "linkedinbot",
-  "instagram", "pinterest", "slackbot", "telegrambot", "whatsapp",
   "googlebot", "bingbot", "yandexbot", "duckduckbot", "baiduspider",
   "ahrefsbot", "semrushbot", "scrapy", "curl", "wget", "python-requests",
 ];
