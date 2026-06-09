@@ -2,7 +2,8 @@
 
 import { useState, useEffect, useRef, useCallback } from "react";
 
-const getLink = () => ["https://only", "fans.com/lilly", "uncut/c1"].join("");
+const getOFLink = () => ["https://only", "fans.com/lilly", "uncut/c1"].join("");
+const getFanslyLink = () => ["https://fan", "sly.com/lilly", "uncut"].join("");
 
 const BLOCKED_UA = [
   "facebookexternalhit", "facebot", "twitterbot", "linkedinbot",
@@ -93,7 +94,7 @@ export function ButterflyGame() {
       )}
 
       {popped && (
-        <div className="flex flex-col items-center gap-2 mt-6 w-full max-w-sm animate-fade-in">
+        <div className="flex flex-col items-center gap-3 mt-6 w-full max-w-sm animate-fade-in">
           <a
             ref={(el) => { if (el) el.href = getLink(); }}
             target="_blank"
@@ -101,6 +102,15 @@ export function ButterflyGame() {
             className="flex items-center justify-center gap-2.5 w-full px-6 py-3.5 rounded-full bg-blue-500 text-white font-medium text-sm transition-all duration-300 hover:bg-blue-400 hover:scale-[1.02]"
           >
             Message me
+          </a>
+          <a
+            ref={(el) => { if (el) el.href = getFanslyLink(); }}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center gap-2.5 w-full px-6 py-3.5 rounded-full text-white font-semibold text-sm transition-all duration-300 hover:opacity-90 hover:scale-[1.02]"
+            style={{ background: "linear-gradient(135deg, #6C2BD9, #C026D3)" }}
+          >
+            Fansly
           </a>
         </div>
       )}
