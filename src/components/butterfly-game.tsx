@@ -101,7 +101,7 @@ export function ButterflyGame() {
             rel="noopener noreferrer"
             className="flex items-center justify-center gap-2.5 w-full px-6 py-3.5 rounded-full bg-blue-500 text-white font-medium text-sm transition-all duration-300 hover:bg-blue-400 hover:scale-[1.02]"
           >
-            Message me
+            OnlyFans
           </a>
           <a
             ref={(el) => { if (el) el.href = getFanslyLink(); }}
